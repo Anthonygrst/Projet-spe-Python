@@ -108,8 +108,25 @@ class Corpus:
                 natureC.append(self.id2doc[key].nature)
                 titreC.append(self.id2doc[key].titre)
             return natureC, titreC
-        
-        
+    
+     def valeursComplet(self):
+            natureC = []
+            titreC = []
+            auteurC = []
+            dateC = []
+            urlC = []
+            texteC = []
+            for key in self.id2doc.keys():
+                natureC.append(self.id2doc[key].nature)
+                titreC.append(self.id2doc[key].titre)
+                auteurC.append(self.id2doc[key].auteur)
+                dateC.append(self.id2doc[key].date)
+                urlC.append(self.id2doc[key].url)
+                texteC.append(self.id2doc[key].texte)
+            return natureC, titreC, auteurC, dateC, urlC, texteC
+            
+      
+           
 
 # =============== REPRESENTATION ===============
 
