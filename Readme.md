@@ -9,9 +9,9 @@
 ### Librairies nécessaires : 
 -----------------------------------------
 
-*dash
-*datetime
-*nltk
-*pandas
-*praw
-*xmltodict
+* dash
+* datetime
+* nltk
+* pandas
+* praw
+* xmltodict
