@@ -149,8 +149,25 @@ titre=corpus.valeursC()[1]
 #Avec le traitement precedent on genere une dataframe puis son csv
 df = pd.DataFrame(zip(nature,titre), columns=['Nature','Titre'])
 df.to_csv(r'corpus.csv',index=False,sep=':')
+    
+
+print("CSV crée avec le corpus pour Dash")
+
+
+#Creation d un deuxieme csv avce toutes les valeurs de corpus
+
+naturec=corpus.valeursComplet()[0]
+titrec=corpus.valeursComplet()[1]
+auteurc=corpus.valeursComplet()[2]
+datec=corpus.valeursComplet()[3]
+urlc=corpus.valeursComplet()[4]
+textec=corpus.valeursComplet()[2]
+
+dfc = pd.DataFrame(zip(naturec,titrec, auteurc, datec, urlc, textec), columns=['Nature','Titre','auteur','date','url','texte'])
+dfc.to_csv(r'corpuscomplet.csv',index=False,sep=':')
      
-print("CSV crée avec le corpus")
+print("CSV crée avec le corpus Complet")
+
 
 
 ########################## TESTS ###################
