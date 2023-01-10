@@ -1,15 +1,6 @@
 import dash
 import dash_html_components as html
 import pandas as pd
-#import main
-
-
-'''article= main.corpus
-componentsReddit = []
-componentsReddit.append(f"Corpus : {str(article)}")
-componentsReddit.append(html.Br())
-
-df= main.corpus '''
 
 #fonction qui permet de generer sur dash une dataframe
 
